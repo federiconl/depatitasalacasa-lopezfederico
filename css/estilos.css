@@ -22,8 +22,7 @@ header{
     display: flex;
     flex-direction: column;
     grid-area: header;
-    margin-left: 15px;
-    
+    margin-left: 15px;   
 }
 
 .body__header__nav{
@@ -51,8 +50,12 @@ header{
     font-size: x-large;
     margin-top: 60%;
     margin-bottom: 60%;
+    transform: scale(1);
 }
 
+.lista_header:hover{
+    transform: scale(1.1);
+}
 .header__nav__enlace{
     color: rgba(180, 69, 108);
     justify-items: center;
@@ -287,9 +290,16 @@ footer{
     align-items: center;
     justify-content: center;
     grid-area: mascotas;
+    transform: scale(1);
 }
-  
 
+.mascotas_nav:hover{
+    transform: scale(1.3);
+    background-color:rgba(180, 69, 108) ;
+    z-index: 1;
+    color:rgba(229,226,173);
+    
+}
 
 .img_mascotas_h{
     width: 400px;
@@ -339,7 +349,12 @@ footer{
     width: 500px;
     text-align: center;
     padding: 15px;
+    transform: scale(1);
     
+}
+
+.celda_formulario:focus{
+    transform: scale(1.05);    
 }
 
 .celda_formulario_text{
@@ -349,6 +364,11 @@ footer{
     width: 500px;
     text-align: center;
     padding: 15px;
+    transform: scale(1);
+}
+.celda_formulario_text:focus{
+    transform: scale(1.05);  
+    border-color: rgba(180, 69, 108) ;
 }
 
 .medios_de_comunicacion{
@@ -400,12 +420,12 @@ footer{
 
 .grid_contacto{
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto auto ;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-    "h1 h1 h1 "
-    "header formulario mediosdecomunicacion"
-    "header footer footer ";
+    "h1 h1 h1 h1"
+    "header formulario . mediosdecomunicacion"
+    "footer footer footer footer ";
     row-gap: 10px ;
     
 }
@@ -417,7 +437,7 @@ footer{
     grid-template-areas:
     "h1 h1"
     "header textoqs"
-    "header footer";
+    "footer footer";
     row-gap: 10px;
 
 }
@@ -431,7 +451,7 @@ footer{
     "header p1aportes"
     "header p2aportes"
     "header p3aportes"
-    "header footer";
+    "footer footer";
     row-gap: 10px;
     column-gap: 20px;
 
@@ -446,7 +466,7 @@ footer{
     "header requisitos"
     "header proceso"
     "header dudas"
-    "header footer";
+    "footer footer";
     row-gap: 10px;
     column-gap: 20px;
     
