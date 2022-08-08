@@ -7,29 +7,39 @@
 
   <meta name="viewport" content="width=, initial-scale=1.0">
 
+  <link rel="stylesheet" href="../css-bs/bootstrap.min.css">
+
   <link rel="stylesheet" href="../css/estilos.css">
 
   <title>Contacto</title>
 </head>
-<body class="grid_contacto">
- <!-- Inicio menu de navegación -->
-    <header class="header">
-        <a href="../index.html"><img class="imglogo" src="../img/logodpalc.jpg" alt=""></a>
-        <nav Class="body__header__nav"> 
-          <ul class="nav_enlaces">
-                <li class="lista_header"><a class="header__nav__enlace" href="../index.html">Inicio</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="adopciones.html">Adopciones</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="quienessomos.html"> ¿Quienes somos?</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="contacto.html"> Contacto</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="aportes.html">Aportes</a></li>
-            </ul>
-        </nav>
-    </header>
- <!-- Fin menu de navegación -->
+<body>
+   <!-- Inicio menu de navegación -->   
+ <header class="container-fluid">
+    <nav class="navbar navbar-expand-xxl color-bg d-flex mx-auto size_header mt-3 " >
 
+        <div class="container-fluid">
+          <a class="navbar-brand ms-0 me-5" href="../index.html"><img src="../img/logodpalc.jpg" alt=" " width="100" height="100" class="d-inline-block align-text-top"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link color_letra ms-5 fs-1 " aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link color_letra ms-5 fs-1" aria-current="page" href="contacto.html">Contacto</a>
+              <a class="nav-link color_letra ms-5 fs-1" href="adopciones.html">Adopciones</a>
+              <a class="nav-link color_letra ms-5 fs-1" href="aportes.html">Aportes</a>
+              <a class="nav-link color_letra ms-5 fs-1" href="quienessomos.html"> ¿Quienes somos?</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+
+ <!-- Fin menu de navegación -->
     <h1 class="h1_class">Medios de comunicacion</h1>
     <section class="contacto">
-        <section >
+         <!--  <section >
          <form action="#" class="formulario">
                 <input class="celda_formulario" type="text" placeholder="Nombre y Apellido"> 
        
@@ -49,38 +59,116 @@
         
         
             </form>
-        </section>
+        </section> -->
+      
 
-        <section class="medios_de_comunicacion">
-            <nav class="medios_de_comunicacion_rrss">
-                <img class="img_rrss" src="../img/whatsapp.png" alt="Whatsapp">
-                <p class="p_rrss"> +54 9 1135694781</p>
-            </nav>
-            
-            <nav class="medios_de_comunicacion_rrss">
-                <img class="img_rrss" src="../img/email.png" alt="Email">
-                <p class="p_rrss">Depatitasalacasa@gmail.com</p>
-            </nav>
+        <form class="row g-3 needs-validation color-bg mt-3 mx-3" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Celular</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" value="+54 " required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Email</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+               Por favor, escribir un e-mail valido
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Provincia</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="Seleccionar"></option>
+                <option>Buenos Aires</option>
+                <option>Capital Federal</option>
+                <option>Catamarca</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Ríos</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa</option>
+                <option>La Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquén</option>
+                <option>Río Negro</option>
+                <option>Salta</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                <option>Tucumán</option>
+            </select>
+              <div class="invalid-feedback">
+                Por favor, selecionar una provincia correcta.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Localidad</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Localidad" required>
+              <div class="invalid-feedback">
+                Por favor, escriba su localidad.
+              </div>
+            </div>
+            <div class="mb-3">
+                <label for="validationTextarea" class="form-label">¿Cómo podemos ayudarte?</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Por favor, escriba su consulta" required></textarea>
+                <div class="invalid-feedback">
+                  
+                </div>
+            <div class="col-l-6 col-md-12 mt-3">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
 
-            <nav class="medios_de_comunicacion_rrss">
-                <img class="img_rrss" src="../img/instagram.png" alt="Instagram">
-                <p class="p_rrss">@Depatitasalacasa</p>
-            </nav>
+        <section class="row d-flex mt-3 justify-content-xl-center ms-3 me-3">
+            <div class="col-xl-6 col-lg-12">
+                <p class="fs-2"><img class="img_rrss" src="../img/whatsapp.png" alt="Whatsapp">+54 9 1135694781</p>
+            </div>
+            <div class="col-xl-6 col-lg-12">
+                <p class="fs-2"><img class="img_rrss" src="../img/email.png" alt="Whatsapp">Depatitasalacasa@gmail.com</p>
+            </div>
 
-            <nav class="medios_de_comunicacion_rrss">
-                <img class="img_rrss" src="../img/twitter.png" alt="Twitter">
-                <p class="p_rrss">@Depatitasalacasa</p>
-            </nav>
-            
-            <nav class="medios_de_comunicacion_rrss">
-                <img class="img_rrss" src="../img/facebook.png" alt="facebook">
-                <p class="p_rrss">@Depatitasalacasa</p>
-            </nav>
-            
+            <div class="col-xl-6 col-lg-12">
+                <p class="fs-2"><img class="img_rrss" src="../img/instagram.png" alt="Instagram">@Depatitasalacasa</p>
+            </div>
+
+            <div class="col-xl-6 col-lg-12">
+                <p class="fs-2"><img class="img_rrss" src="../img/twitter.png" alt="Twitter">@Depatitasalacasa</p>
+            </div>
+
+            <div class="col-xl-6 col-lg-12">
+                <p class="fs-2"><img class="img_rrss" src="../img/facebook.png" alt="Facebook">@Depatitasalacasa</p>
+            </div>
 
         </section>
         
     </section>
+
+    
     <footer>
         <div class="footer_div">
             <a href="../index.html"><img class="img-footer" src="../img/logodpalc.jpg" alt="logo"></a>
@@ -93,6 +181,8 @@
         <p class="p_copy"> © Copyright holder 2022. Todos los derechos reservados. Federico Lopez.
         </p>
     </footer>
+
+    <script src="../js/bootstrap.min.js" ></script>
 </body>
 
 </html>
