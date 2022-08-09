@@ -153,51 +153,6 @@ footer{
     font-size: large;
 }
 
-
-/*inicio estilos aportes*/
-.aportes_p{
-    color:rgba(180, 69, 108);
-    background-color:rgba(229,226,173) ;
-    padding: 10px;
-    border-radius: 5px;
-    border: 3.5px solid;
-    border-color: rgba(180, 69, 108) ;
-    width: 95%;
-    grid-area: p1aportes;
-    font-size: large;
-    line-height: 1.5;
-    height: max-content;
-}
-
-.aportes_p2{
-    color:rgba(180, 69, 108);
-    background-color:rgba(229,226,173) ;
-    padding: 10px;
-    border-radius: 5px;
-    border: 3.5px solid;
-    border-color: rgba(180, 69, 108) ;
-    width: 95%;
-    grid-area: p2aportes;
-    font-size: large;
-    line-height: 1.5;
-    height: max-content;
-}
-
-.aportes_p3{
-    color:rgba(180, 69, 108);
-    background-color:rgba(229,226,173) ;
-    padding: 10px;
-    border-radius: 5px;
-    border: 3.5px solid;
-    border-color: rgba(180, 69, 108) ;
-    width: 95%;
-    grid-area: p3aportes;
-    font-size: large;
-    line-height: 1.5;
-    height: max-content;
-}
-/*fin estilos aportes*/
-
 .color{
     color:rgba(180, 69, 108);
     background-color:rgba(229,226,173) 
@@ -309,76 +264,6 @@ footer{
 }
 /*fin estilos contacto*/
 
-/*
-/*inicio gird*/
-/*.grid_index{
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto 1fr  auto;
-    grid-template-areas:
-    "h1 h1 h1 "
-    "header mascotas ."
-    "footer footer footer"
-    ;
-    row-gap: 10px ;
-    column-gap: 10px ;
-    
-}
-
-.grid_contacto{
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    "h1 h1 h1 "
-    "header formulario mediosdecomunicacion"
-    "header footer footer ";
-    row-gap: 10px ;
-    
-}
-
-.grid_quienessomos{
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    "h1 h1"
-    "header textoqs"
-    "header footer";
-    row-gap: 10px;
-
-}
-
-.grid_aportes{
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto auto auto auto ;
-    grid-template-areas:
-    "h1 h1"
-    "header p1aportes"
-    "header p2aportes"
-    "header p3aportes"
-    "header footer";
-    row-gap: 10px;
-    column-gap: 20px;
-
-}
-
-.grid_adopciones{
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto auto auto auto ;
-    grid-template-areas:
-    "h1 h1"
-    "header requisitos"
-    "header proceso"
-    "header dudas"
-    "header footer";
-    row-gap: 10px;
-    column-gap: 20px;
-
-/*fin grid*/
-
 /*inicio media queries*/
 @media screen and (max-width: 800px) {
     
@@ -416,6 +301,11 @@ footer{
             width: 25px;
             height: 25px;
         }
+        .ul_mascotas{
+            font-size: small;
+            font-weight: 700;
+
+        }
         /*fin index*/
         /*inicio footer*/
         .img-footer{
@@ -425,40 +315,11 @@ footer{
     /*fin footer*/
     
     /*inicio contacto*/
-        .grid_contacto{
-
-            grid-template-columns: auto auto;
-            grid-template-rows: repeat(4,auto);
-            grid-template-areas: 
-            "h1 h1"
-            "header formulario"
-            "header mediosdecomunicacion"
-            "footer footer";
-            align-items:center;
-            justify-items:center;
-        }
+        
         .contacto{
             flex-direction: column;
         }
         
-        .formulario {
-        height: 350px;
-        width: 275px;
-        margin-right: 7.5px;
-        }
-
-        .celda_formulario {
-        height: 15px;
-        width: 250px;
-        padding: 7.5px;
-        }
-
-        .celda_formulario_text{
-        height: 175px;
-        width: 250px;
-        padding: 7.5px;
-        }
-
         .medios_de_comunicacion{
         font-size:medium;
         height: 350px;
@@ -500,44 +361,9 @@ footer{
             
         }
     /*fin quienes somos*/
-    /*inicio aportes*/
-        .aportes_p{
-            font-size: small;
-        }
-        
-        .aportes_p2{
-            font-size: small;
-    
-        }
-        
-        .aportes_p3{
-            font-size: small;
-        }
-
-        .grid_aportes{
-            display: grid;
-            grid-template-columns: auto auto ;
-            grid-template-rows: auto auto auto auto auto ;
-            grid-template-areas:
-            "h1 h1"
-            "header p1aportes"
-            "header p2aportes"
-            "header p3aportes"
-            "footer footer";
-        }
-    /*fin aportes*/
+   
     /*inicio adopciones*/
-    .grid_adopciones{
-        display: grid;
-        grid-template-columns: auto auto ;
-        grid-template-rows: auto auto auto auto auto ;
-        grid-template-areas:
-        "h1 h1"
-        "header requisitos"
-        "header proceso"
-        "header dudas"
-        "footer footer";     
-    }
+   
     .adop_requisitos{
         padding: auto;
         margin: 7px auto 7px auto;
@@ -606,6 +432,11 @@ footer{
             width: 337px ;
             height: 412.5px;
         }
+        
+        .ul_mascotas{
+            font-size: medium;
+            font-weight: 700;
+        }
      /*fin index*/
      /*inicio footer*/
         .img-footer{
@@ -614,38 +445,8 @@ footer{
         }
     /*fin footer*/
     /*inicio contacto*/
-    .grid_contacto{
-            grid-template-columns: auto auto;
-            grid-template-rows: repeat(4,auto);
-            grid-template-areas: 
-            "h1 h1"
-            "header formulario"
-            "header mediosdecomunicacion"
-            "footer footer";
-            align-items: center;
-            justify-items: center;
-
-        }
         .contacto{
             flex-direction: column;
-        }
-        
-        .formulario {
-        height: 465px;
-        width: 365px;
-        margin-right: 10px;
-        }
-
-        .celda_formulario {
-        height: 20px;
-        width: 333px;
-        padding: 10px;
-        }
-
-        .celda_formulario_text{
-        height: 233px;
-        width: 332px;
-        padding: 10px;
         }
 
         .medios_de_comunicacion{
@@ -689,44 +490,9 @@ footer{
             
         }
     /*fin quienes somos*/
-        /*inicio aportes*/
-        .aportes_p{
-            font-size: medium;
-        }
-        
-        .aportes_p2{
-            font-size: medium;
-    
-        }
-        
-        .aportes_p3{
-            font-size: medium;
-        }
-
-        .grid_aportes{
-            display: grid;
-            grid-template-columns: auto auto ;
-            grid-template-rows: auto auto auto auto auto ;
-            grid-template-areas:
-            "h1 h1"
-            "header p1aportes"
-            "header p2aportes"
-            "header p3aportes"
-            "footer footer";
-        }
-    /*fin aportes*/
+       
         /*inicio adopciones*/
-        .grid_adopciones{
-            display: grid;
-            grid-template-columns: auto auto ;
-            grid-template-rows: auto auto auto auto auto ;
-            grid-template-areas:
-            "h1 h1"
-            "header requisitos"
-            "header proceso"
-            "header dudas"
-            "footer footer";      
-        }
+       
         .adop_requisitos{
             padding: auto;
             margin: 7px auto 7px auto;
