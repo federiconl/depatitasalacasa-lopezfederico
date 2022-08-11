@@ -19,10 +19,10 @@ body{
 }
 /*inicio estilos quienes somos*/
 .body__div__parrafo{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 15px auto 25px auto;
+    padding: 15px 25px 15px 25px;
+    width: 95%;
     position: relative;
-    padding: 25px 25px 25px 25px;
     font-size:large;
     line-height: 1.5;
     border-radius: 5px;
@@ -34,13 +34,15 @@ body{
     border-color: rgba(180, 69, 108) ;
     grid-area: textoqs;
     height: min-content; 
-    width: auto;
+    
 }
 
 .body__div__parrafo__img {
     float: right;
     margin: 10px;
     margin-left: 15px;
+    width: 800px ;
+    height: 550px;
 }
 /*fin estilos quienes somos*/
 
@@ -183,18 +185,19 @@ footer{
     justify-content:space-around;
     align-items:center;
     align-content: stretch;
-   
+    margin: 15px auto 25px auto;
+    padding: 15px 25px 15px 25px;
+    width: 95%;
+    border-radius: 5px;
     border: 3.5px solid;
     border-color: rgba(180, 69, 108) ;
-    border-radius: 5px;
-    grid-area: mascotas;
-
 }
 
 .mascotas_nav{
     width: 450px;
     height: 550px;
     border: 2px solid;
+    border-radius: 5px;
     border-color: rgba(180, 69, 108) ;
     margin: 5px 5px 5px 5px;
     display: flex;
@@ -227,6 +230,12 @@ footer{
 /*inicio estilos contacto*/
 .contacto{
     display: flex;
+    margin: 15px auto 25px auto;
+   
+    width: 95%;
+    border-radius: 5px;
+    border: 3.5px solid;
+    border-color: rgba(180, 69, 108) ;  
     
     
 }
@@ -267,22 +276,7 @@ footer{
 /*inicio media queries*/
 @media screen and (max-width: 800px) {
     
-    /*inicio header*/
-        .imglogo{
-            width: 100px;
-            height: 100px;
-        }
-        .lista_header{
-            font-size: medium;
-        }
-        /*fin header*/
-        .grid_index{
-            grid-template-columns: auto auto;
-        }
-        .h1_class{
-            font-size: 1rem;
-        }
-
+   
     /*inicio index*/
         .img_mascotas_h{
             width: 200px;
@@ -353,13 +347,7 @@ footer{
             height: 200px;
 
         }
-        .grid_quienessomos{
-            grid-template-areas: 
-            "h1 h1"
-            "header textoqs"
-            "footer footer";;
-            
-        }
+    
     /*fin quienes somos*/
    
     /*inicio adopciones*/
@@ -390,29 +378,25 @@ footer{
     .color_letra{
     color:rgba(180, 69, 108);
     font-size: small;
-}
-
+    }
+   
     
     /*fin adopciones*/
+
+    /*inicio carousel*/
+    .img_carousel_v{
+        width: 200px;
+        height: 300px;
+    }
+    
+    .img_carousel_h{
+        height: 200px;
+        width: 400px;
+    }
+    /*fin carousel*/
 }
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
-
-    /*inicio header*/
-        .imglogo{
-            width: 150px;
-            height: 150px;
-        }
-        .lista_header{
-            font-size: large;
-        }
-        /*fin header*/
-        .grid_index{
-            grid-template-columns: auto auto;
-        }
-        .h1_class{
-            font-size: 1.5rem;
-        }
 
     /*inicio index*/
         .img_mascotas_h{
@@ -482,13 +466,7 @@ footer{
             height: 266px;
     
         }
-        .grid_quienessomos{
-            grid-template-areas: 
-            "h1 h1"
-            "header textoqs"
-            "footer footer";
-            
-        }
+     
     /*fin quienes somos*/
        
         /*inicio adopciones*/
@@ -523,7 +501,18 @@ footer{
             color:rgba(180, 69, 108);
             font-size: x-large;
         }
-        
+
+         /*inicio carousel*/
+    .img_carousel_v{
+        width: 330px;
+        height: 500px;
+    }
+    
+    .img_carousel_h{
+        height: 460px;
+        width: 665px;
+    }
+    /*fin carousel*/
 }
 /*fin media queries*/
 
@@ -542,4 +531,85 @@ footer{
     border: 2.5px solid;
     border-color: rgba(180, 69, 108) ;
     border-radius: 10px;
+}
+
+/* inicio animaciones*/
+/*header*/  
+    .zoom_1-4{
+        transform: scale(1)
+    }
+
+    .zoom_1-4:hover{
+        transform: scale(1.4);
+        background-color: rgba(180, 69, 108, 0.351) ;
+        color: rgba(229,226,173) ;
+        border-radius: 25px;
+        text-decoration: underline solid 2px rgba(229,226,173);
+        width: min-content;
+        
+    }
+
+    .zoom_1-2{
+        transform: scale(1);
+        
+    }
+
+    .zoom_1-2:hover{
+        transform: scale(1.2);
+        background-color: rgba(180, 69, 108, 0.351) ;
+        color: rgba(229,226,173) ;
+        border-radius: 25px;
+        text-decoration: underline solid 2px rgba(229,226,173);
+    }
+/*header*/
+/*index*/
+.mascotas_nav{
+    transform: scale(1);
+}
+
+.mascotas_nav:hover{
+    transform: scale(1.2);
+    z-index: 1;
+    border-radius: 25px;
+    text-decoration: underline solid 2px rgba(180, 69, 108);
+    background-color: rgba(200, 196, 123, 0.975);
+    
+}
+
+/*index*/
+    
+/*fin animaciones*/
+
+/*inicio carousel*/
+.img_carousel_v{
+    width: 500px;
+    height: 750px;
+}
+
+.img_carousel_h{
+    height: 700px;
+    width: 1000px;
+}
+
+.p_carousel{
+    margin: 15px auto 25px auto;
+    padding: 15px 25px 15px 25px;
+    width: 95%;
+    border-radius: 5px;
+    border: 3.5px solid;
+    border-color: rgba(180, 69, 108) ;
+}
+
+.color_carousel{
+    border-radius: 5px;
+    border: 3.5px solid;
+    border-color: rgba(180, 69, 108) ;
+    color:rgba(180, 69, 108);
+    background-color:rgba(229,226,173)
+}
+
+.botones_carousel{
+    margin: 15px auto 25px auto;
+    padding: 15px 25px 15px 25px;
+    width: 95%;
 }
