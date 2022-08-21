@@ -7,168 +7,176 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css-propio/estilos.css">
+    <link rel="stylesheet" href="./css-bs/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
 
     <title>De patitas a la casa</title>
 </head>
-<body class="grid_index" >
- <!-- Inicio menu de navegación -->
-    <header class="header">
-        <a href="index.html"><img class="imglogo" src="./img/logodpalc.jpg" alt="logo"></a>
-        <nav> 
-            <ul class="nav_enlaces">
-                <li class="lista_header"><a class="header__nav__enlace" href="index.html">Inicio</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="./pages/adopciones.html">Adopciones</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="./pages/quienessomos.html"> Nosotros</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="./pages/contacto.html"> Contacto</a></li>
-                <li class="lista_header"><a class="header__nav__enlace" href="./pages/aportes.html">Aportes</a></li>
-            </ul>
-        </nav>
- </header>
- <!-- Fin menu de navegación -->
-    
-    <!-- Fin menu de navegación -->
+<body >
+<!-- Inicio menu de navegación -->
 
-    <h1 class="h1_class">Ellos estan buscando un hogar</h1>
+<header class="container-fluid">
+        <nav class="navbar navbar-expand-xxl color-bg d-flex mx-auto size_header mt-3 " >
+    
+            <div class="container-fluid">
+              <a class="navbar-brand ms-0 me-5 zoom_1-2" href="index.html"><img src="./img/logodpalc.jpg" alt=" " width="100" height="100" class="d-inline-block align-text-top"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link color_letra ms-5 fs-1 zoom_1-4" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link color_letra ms-5 fs-1 zoom_1-4" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                  <a class="nav-link color_letra ms-5 fs-1 zoom_1-4" href="./pages/adopciones.html">Adopciones</a>
+                  <a class="nav-link color_letra ms-5 fs-1 zoom_1-4" href="./pages/aportes.html">Aportes</a>
+                  <a class="nav-link color_letra ms-5 fs-1 zoom_1-2" href="./pages/quienessomos.html"> ¿Quienes somos?</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+</header>
+<!-- Fin menu de navegación -->
+    
+<h1 class="h1_class">Ellos estan buscando un hogar</h1>
 
 <!-- Inicio carrusel de imagenes -->
-    <nav class="mascotas">
+    <nav class="mascotas ">
         <nav class="mascotas_nav">
-            <img class="img_mascotas_h" src="./img/1.jpg" alt="">
-            <ul class="ul_mascotas"> 
-                <li>Branco </li> 
-                <li>Edad: 9 meses</li> 
-                <li>Ubicacion: Villa Maria, Cordoba</li>
+            <a href="./pag-masc/branco.html"><img class="img_mascotas_v" src="./img/1.jpg" alt=""></a>
+            <ul class="ul_mascotas "> 
+                <a class="color_letra " href="./pag-masc/branco.html"> <li> Branco </li> </a>
+                <li class="color_letra ">Edad: 9 meses</li> 
+                <li class="color_letra ">Ubicacion: Villa Maria, Cordoba</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_h" src="./img/2.jpg" alt="">
+            <a href="./pag-masc/matilde.html"><img class="img_mascotas_v" src="./img/2.jpg" alt=""></a>
             <ul class="ul_mascotas"> 
-                <li>Matilde </li> 
-                <li>Edad: 3 años</li> 
-                <li>Ubicacion: Mataderos, CABA</li>
+                <a class="color_letra " href="./pag-masc/matilde.html"> <li> Matilde </li> </a> 
+                <li class="color_letra " >Edad: 3 años</li> 
+                <li class="color_letra ">Ubicacion: Mataderos, CABA</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/3.jpg" alt="">
+            <a href="./pag-masc/hachi.html"><img class="img_mascotas_h" src="./img/3.jpg" alt=""></a>
             <ul class="ul_mascotas"> 
-                <li>Hachi </li> 
-                <li>Edad: 6 años</li> 
-                <li>Ubicacion: Belgrano, CABA</li>
+                <a class="color_letra " href="./pag-masc/hachi.html"> <li> Hachi </li> </a> 
+                <li class="color_letra ">Edad: 6 años</li> 
+                <li class="color_letra ">Ubicacion: Belgrano, CABA</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_h" src="./img/4.jpg" alt="">
+            <a href="./pag-masc/huesos.html"><img class="img_mascotas_v" src="./img/4.jpg" alt=""></a>
             <ul class="ul_mascotas"> 
-                <li>Huesos </li> 
-                <li>Edad: 2 años</li> 
-                <li>Ubicacion: Luis Guillon, Buenos Aires</li>
+                <a class="color_letra " href="./pag-masc/huesos.html"> <li> Huesos </li> </a>
+                <li class="color_letra ">Edad: 2 años</li> 
+                <li class="color_letra ">Ubicacion: Luis Guillon, Buenos Aires</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_h" src="./img/5.jpg" alt="">
+            <a href="./pag-masc/pulga.html"><img class="img_mascotas_h" src="./img/5.jpg" alt=""></a>
             <ul class="ul_mascotas"> 
-                <li>Pulga </li> 
-                <li>Edad: 9 años</li> 
-                <li>Ubicacion: Laferrere, Buenos Aires</li>
+                <a class="color_letra " href="./pag-masc/pulga.html"> <li> Pulga </li> </a>
+                <li class="color_letra ">Edad: 9 años</li> 
+                <li class="color_letra ">Ubicacion: Laferrere, Buenos Aires</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_h" src="./img/6.jpg" alt="">
+            <a href="./pag-masc/panchito.html"><img class="img_mascotas_h" src="./img/6.jpg" alt=""></a>
             <ul class="ul_mascotas"> 
-                <li>Panchito </li> 
-                <li>Edad: 5 meses</li> 
-                <li>Ubicacion:Merlo, San Luis</li>
-            </ul>
-            <p class="p_mascotas">Panchito Edad: 5 meses Ubicacion: Merlo, San Luis</p>
-        </nav>
-
-        <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/7.jpeg" alt="">
-            <ul class="ul_mascotas"> 
-                <li>Garfield </li> 
-                <li>Edad: 1 mes</li> 
-                <li>Ubicacion: Resistencia, Chaco</li>
+                <a class="color_letra " href="./pag-masc/panchito.html"> <li> Panchito </li> </a> 
+                <li class="color_letra ">Edad: 5 meses</li> 
+                <li class="color_letra ">Ubicacion:Merlo, San Luis</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/8.jpeg" alt="">
+            <a href="./pag-masc/quina.html"><img class="img_mascotas_v" src="./img/7.jpg" alt=""></a>
             <ul class="ul_mascotas"> 
-                <li>Quina </li> 
-                <li>Edad: 2 meses</li> 
-                <li>Ubicacion: Lanus, Buenos Aires</li>
+                <a class="color_letra " href="./pag-masc/quina.html"> <li> Quina </li> </a> 
+                <li class="color_letra ">Edad: 8 meses</li> 
+                <li class="color_letra ">Ubicacion: Resistencia, Chaco</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/9.jpeg" alt="">
+            <a href="./pag-masc/garfield.html"><img class="img_mascotas_v" src="./img/8.jpg" alt=""></a>
             <ul class="ul_mascotas"> 
-                <li>Duka </li> 
-                <li>Edad: 1 año</li> 
-                <li>Ubicacion: Tapiales, Buenos Aires</li>
+                <a class="color_letra " href="./pag-masc/garfield.html"> <li> Garfield</li> </a> 
+                <li class="color_letra ">Edad: 5 meses</li> 
+                <li class="color_letra ">Ubicacion: Lanus, Buenos Aires</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/10.jpeg" alt="">
+            <a href="./pag-masc/duka.html"><img class="img_mascotas_v" src="./img/9.jpg" alt=""></a>  
             <ul class="ul_mascotas"> 
-                <li>Noah </li> 
-                <li>Edad: 6 años</li> 
-                <li>Ubicacion: Mataderos, CABA</li>
+                <a class="color_letra " href="./pag-masc/duka.html"> <li> Duka </li> </a>  
+                <li class="color_letra ">Edad: 1 año</li> 
+                <li class="color_letra ">Ubicacion: Tapiales, Buenos Aires</li>
+            </ul>
+        </nav>
+
+        <nav class="mascotas_nav">
+            <a href="./pag-masc/noah.html"><img class="img_mascotas_h" src="./img/10.jpg" alt=""></a>  
+            <ul class="ul_mascotas"> 
+                <a class="color_letra " href="./pag-masc/noah.html"> <li> Noah </li> </a>  
+                <li class="color_letra ">Edad: 6 años</li> 
+                <li class="color_letra ">Ubicacion: Mataderos, CABA</li>
             </ul>
       
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/11.jpeg" alt="">
+            <a href="./pag-masc/homero.html"><img class="img_mascotas_h" src="./img/11.jpg" alt=""></a>  
             <ul class="ul_mascotas"> 
-                <li>Homero </li> 
-                <li>Edad: 4 años</li> 
-                <li>Ubicacion: Tortuguitas, Buenos Aires</li>
+                <a class="color_letra " href="./pag-masc/homero.html"> <li> Homero </li> </a> 
+                <li class="color_letra ">Edad: 4 años</li> 
+                <li class="color_letra ">Ubicacion: Tortuguitas, Buenos Aires</li>
             </ul>
         </nav>
 
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/12.jpeg" alt="">
+            <a href="./pag-masc/matute.html"><img class="img_mascotas_h" src="./img/12.jpg" alt=""></a>  
             <ul class="ul_mascotas"> 
-                <li>Matute </li> 
-                <li>Edad: 7 años</li> 
-                <li>Ubicacion: Barracas, CABA</li>
+                <a class="color_letra " href="./pag-masc/matute.html"> <li> Matute </li> </a> 
+                <li class="color_letra ">Edad: 7 años</li> 
+                <li class="color_letra ">Ubicacion: Barracas, CABA</li>
             </ul>
         
         </nav>
         
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/13.jpeg" alt="">
+            <a href="./pag-masc/juanita.html"><img class="img_mascotas_h" src="./img/13.jpg" alt=""></a>  
             <ul class="ul_mascotas"> 
-                <li>Juanita </li> 
-                <li>Edad: 3 años</li> 
-                <li>Ubicacion: Malvinas Argentinas, Buenos Aires</li>
+                <a class="color_letra " href="./pag-masc/juanita.html"> <li> Juanita </li> </a> 
+                <li class="color_letra ">Edad: 3 años</li> 
+                <li class="color_letra ">Ubicacion: Malvinas Argentinas, Buenos Aires</li>
             </ul>
             
         </nav>
        
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/14.jpeg" alt="">
+            <a href="./pag-masc/spiderman.html"><img class="img_mascotas_h" src="./img/14.jpg" alt=""></a>  
             <ul class="ul_mascotas"> 
-                <li>Spiderman </li> 
-                <li>Edad: 10 años</li> 
-                <li>Ubicacion: Pilar, Buenos Aires</li>
+                <a class="color_letra " href="./pag-masc/spiderman.html"> <li> Spiderman </li> </a> 
+                <li class="color_letra ">Edad: 10 años</li> 
+                <li class="color_letra ">Ubicacion: Pilar, Buenos Aires</li>
             </ul>
         </nav>
         
         <nav class="mascotas_nav">
-            <img class="img_mascotas_v" src="./img/15.jpeg" alt="">
+            <a href="./pag-masc/boladenieve.html"><img class="img_mascotas_v" src="./img/15.jpg" alt=""></a>  
             <ul class="ul_mascotas"> 
-                <li>Bola de nieve </li> 
-                <li>Edad: 1 año</li> 
-                <li>Ubicacion: El Calafate, Santa Cruz</li>
+                <a class="color_letra " href="./pag-masc/boladenieve.html"> <li> Bola de Nieve </li> </a> 
+                <li class="color_letra ">Edad: 1 año</li> 
+                <li class="color_letra ">Ubicacion: El Calafate, Santa Cruz</li>
             </ul>
         </nav>
      <!-- Fin carrusel de imagenes -->
@@ -187,6 +195,8 @@
         <p class="p_copy"> © Copyright holder 2022. Todos los derechos reservados. Federico Lopez.
         </p>
     </footer>
+
+    <script src="./js/bootstrap.min.js" ></script>
 </body>
 
 </html>
