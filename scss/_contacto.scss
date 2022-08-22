@@ -1,0 +1,35 @@
+/*inicio contacto*/
+.contacto{
+    display: flex;
+    margin: $margen;
+    width: $ancho;
+    @include bordes;
+
+    .img_rrss {
+        width: 65px;
+        height: 65px;
+        
+    } 
+}
+/*fin contacto*/
+
+@media screen and (max-width: 800px) {
+    .contacto{
+        flex-direction: column;
+    }
+
+    .img_rrss {
+    width: 32.5px;
+    height: 32.5px;}
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+    .contacto{
+        flex-direction: column;
+    }
+
+    .img_rrss {
+    width: 43.5px;
+    height: 43.5px;}
+}

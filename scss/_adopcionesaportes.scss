@@ -1,0 +1,62 @@
+
+.p_txt{
+    color:map-get($color, color1 );;
+    background-color:map-get($color, color2 ); ;
+    list-style-type: disc;
+    height: max-content;
+    @include textos;
+
+    
+    .titulos_adop{
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .listas{
+        font-size: large;
+    }
+    
+    .textos_adop{
+        font-size: large;
+        text-align: center;
+    
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+   
+.p_txt{
+    padding: auto;
+    margin: 7px auto 7px auto;
+    font-size: small;
+
+}
+
+.titulos_adop{
+    font-size: large;
+    text-align: center;
+}
+
+
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+
+       
+ .p_txt{
+    padding: auto;
+    margin: 7px auto 7px auto;
+    font-size: medium;
+
+}
+.titulos_adop{
+    font-size: x-large;
+    text-align: center;
+}
+
+
+
+}

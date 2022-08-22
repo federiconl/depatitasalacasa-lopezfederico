@@ -1,3 +1,189 @@
+.mascotas {
+  border: 3.5px solid rgba(180, 69, 108, 0.986);
+  border-radius: 5px;
+  margin: 15px auto 25px auto;
+  padding: 15px 25px 15px 25px;
+  width: 95%;
+  line-height: 1.5;
+  font-size: large;
+  color: rgba(180, 69, 108, 0.986);
+  background-color: rgba(229, 226, 173, 0.986);
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch; }
+  .mascotas .mascotas_nav {
+    border: 3.5px solid rgba(180, 69, 108, 0.986);
+    border-radius: 5px;
+    margin: 15px auto 25px auto;
+    padding: 15px 25px 15px 25px;
+    width: 95%;
+    line-height: 1.5;
+    font-size: large;
+    width: 450px;
+    height: 550px;
+    border: 2px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1); }
+    .mascotas .mascotas_nav .mascotas:hover {
+      transform: scale(1.5); }
+    .mascotas .mascotas_nav .img_mascotas_h {
+      width: 400px;
+      height: 300px; }
+    .mascotas .mascotas_nav .img_mascotas_v {
+      width: 300px;
+      height: 400px; }
+    .mascotas .mascotas_nav .ul_mascotas {
+      font-size: large;
+      text-align: center;
+      padding-top: 10px;
+      list-style-type: none; }
+
+@media screen and (max-width: 800px) {
+  .img_mascotas_h {
+    width: 200px;
+    height: 150px; }
+  .mascotas_nav {
+    width: 225px;
+    height: 275px; }
+  .img_mascotas_v {
+    width: 100px;
+    height: 150px; }
+  .ul_mascotas {
+    font-size: small;
+    font-weight: 700; } }
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  /*inicio index*/
+  .img_mascotas_h {
+    width: 300px;
+    height: 225px; }
+  .mascotas_nav {
+    width: 225px;
+    height: 275px; }
+  .img_mascotas_v {
+    width: 200px;
+    height: 250px; }
+  .mascotas_nav {
+    width: 337px;
+    height: 412.5px; }
+  .ul_mascotas {
+    font-size: medium;
+    font-weight: 700; }
+  /*fin index*/ }
+
+.p_txt {
+  color: rgba(180, 69, 108, 0.986);
+  background-color: rgba(229, 226, 173, 0.986);
+  list-style-type: disc;
+  height: max-content;
+  border: 3.5px solid rgba(180, 69, 108, 0.986);
+  border-radius: 5px;
+  margin: 15px auto 25px auto;
+  padding: 15px 25px 15px 25px;
+  width: 95%;
+  line-height: 1.5;
+  font-size: large; }
+  .p_txt .titulos_adop {
+    font-size: xx-large;
+    text-align: center; }
+  .p_txt .listas {
+    font-size: large; }
+  .p_txt .textos_adop {
+    font-size: large;
+    text-align: center; }
+
+@media screen and (max-width: 800px) {
+  .p_txt {
+    padding: auto;
+    margin: 7px auto 7px auto;
+    font-size: small; }
+  .titulos_adop {
+    font-size: large;
+    text-align: center; } }
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  .p_txt {
+    padding: auto;
+    margin: 7px auto 7px auto;
+    font-size: medium; }
+  .titulos_adop {
+    font-size: x-large;
+    text-align: center; } }
+
+.body__div__parrafo {
+  position: relative;
+  float: left;
+  text-align: justify;
+  color: rgba(180, 69, 108, 0.986);
+  background-color: rgba(229, 226, 173, 0.986);
+  height: min-content;
+  border: 3.5px solid rgba(180, 69, 108, 0.986);
+  border-radius: 5px;
+  margin: 15px auto 25px auto;
+  padding: 15px 25px 15px 25px;
+  width: 95%;
+  line-height: 1.5;
+  font-size: large; }
+  .body__div__parrafo .body__div__parrafo__img {
+    float: right;
+    margin: 10px;
+    margin-left: 15px;
+    width: 800px;
+    height: 550px; }
+
+@media screen and (max-width: 800px) {
+  .body__div__parrafo {
+    font-size: small;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 12px 12px 12px 12px; }
+  .body__div__parrafo__img {
+    width: 300px;
+    height: 200px; } }
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  .body__div__parrafo {
+    font-size: medium;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 16px 16px 16px 16px; }
+  .body__div__parrafo__img {
+    width: 400px;
+    height: 266px; } }
+
+/*inicio contacto*/
+.contacto {
+  display: flex;
+  margin: 15px auto 25px auto;
+  width: 95%;
+  border: 3.5px solid rgba(180, 69, 108, 0.986);
+  border-radius: 5px; }
+  .contacto .img_rrss {
+    width: 65px;
+    height: 65px; }
+
+/*fin contacto*/
+@media screen and (max-width: 800px) {
+  .contacto {
+    flex-direction: column; }
+  .img_rrss {
+    width: 32.5px;
+    height: 32.5px; } }
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  .contacto {
+    flex-direction: column; }
+  .img_rrss {
+    width: 43.5px;
+    height: 43.5px; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -23,7 +209,6 @@ footer {
   margin: auto;
   margin-top: 15px; }
   footer .footer_div {
-    color: white;
     display: flex;
     flex-direction: row;
     align-self: flex-end;
@@ -41,136 +226,33 @@ footer {
     justify-content: center; }
 
 /* fin footer*/
-/* inicio index*/
-.mascotas {
-  color: rgba(180, 69, 108, 0.986);
-  background-color: rgba(229, 226, 173, 0.986);
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: stretch;
-  margin: 15px auto 25px auto;
-  padding: 15px 25px 15px 25px;
-  width: 95%;
-  border-radius: 5px;
-  border: 3.5px solid;
-  border-color: rgba(180, 69, 108, 0.986); }
-  .mascotas .mascotas_nav {
-    width: 450px;
-    height: 550px;
-    border: 2px solid;
-    border-radius: 5px;
-    border-color: rgba(180, 69, 108, 0.986);
-    margin: 5px 5px 5px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: scale(1); }
-    .mascotas .mascotas_nav .mascotas_nav:hover {
-      transform: scale(1.2);
-      z-index: 1;
-      border-radius: 25px;
-      text-decoration: underline solid 2px rgba(180, 69, 108, 0.986);
-      background-color: rgba(200, 196, 123, 0.975); }
-    .mascotas .mascotas_nav .img_mascotas_h {
-      width: 400px;
-      height: 300px; }
-    .mascotas .mascotas_nav .img_mascotas_v {
-      width: 300px;
-      height: 400px; }
-    .mascotas .mascotas_nav .ul_mascotas {
-      font-size: large;
-      text-align: center;
-      padding-top: 10px;
-      list-style-type: none; }
-
-/*fin index*/
-/*inicio  quienes somos*/
-.body__div__parrafo {
-  margin: 15px auto 25px auto;
-  padding: 15px 25px 15px 25px;
-  width: 95%;
-  position: relative;
-  font-size: large;
-  line-height: 1.5;
-  border-radius: 5px;
-  float: left;
-  text-align: justify;
-  color: rgba(180, 69, 108, 0.986);
-  background-color: rgba(229, 226, 173, 0.986);
-  border: 3.5px solid;
-  border-color: rgba(180, 69, 108, 0.986);
-  grid-area: textoqs;
-  height: min-content; }
-  .body__div__parrafo .body__div__parrafo__img {
-    float: right;
-    margin: 10px;
-    margin-left: 15px;
-    width: 800px;
-    height: 550px; }
-
-/*fin  quienes somos*/
-/*inicio contacto*/
-.contacto {
-  display: flex;
-  margin: 15px auto 25px auto;
-  width: 95%;
-  border-radius: 5px;
-  border: 3.5px solid;
-  border-color: rgba(180, 69, 108, 0.986); }
-  .contacto .img_rrss {
-    width: 65px;
-    height: 65px; }
-
-/*fin contacto*/
-/*inicio adopciones y aportres*/
-.p_txt {
-  color: rgba(180, 69, 108, 0.986);
-  background-color: rgba(229, 226, 173, 0.986);
-  list-style-type: disc;
-  padding: 15px 25px 15px 25px;
-  margin: 15px auto 15px auto;
-  width: 95%;
-  height: max-content;
-  border-radius: 5px;
-  border: 3.5px solid;
-  border-color: rgba(180, 69, 108, 0.986);
-  font-size: large;
-  line-height: 1.5; }
-  .p_txt .titulos_adop {
-    font-size: xx-large;
-    text-align: center; }
-  .p_txt .listas {
-    font-size: large; }
-  .p_txt .textos_adop {
-    font-size: large;
-    text-align: center; }
-
-/*fin adopciones y aportres*/
 /*inicio header*/
 .zoom_1-4 {
   transform: scale(1); }
 
-.zoom_1-4:hover {
+.zoom_1-4:hover, .zoom_1-2:hover, .zoom_1-3:hover {
   transform: scale(1.4);
   background-color: rgba(180, 69, 108, 0.351);
   color: rgba(229, 226, 173, 0.986);
   border-radius: 25px;
   text-decoration: underline solid 2px rgba(229, 226, 173, 0.986);
-  width: min-content; }
+  width: auto; }
 
 .zoom_1-2 {
   transform: scale(1); }
 
 .zoom_1-2:hover {
   transform: scale(1.2);
-  background-color: rgba(180, 69, 108, 0.351);
-  color: rgba(229, 226, 173, 0.986);
-  border-radius: 25px;
-  text-decoration: underline solid 2px rgba(229, 226, 173, 0.986); }
+  width: none; }
+
+.zoom_1-3 {
+  transform: scale(1); }
+
+.zoom_1-3:hover {
+  transform: scale(1.3);
+  background-color: rgba(229, 226, 173, 0.986);
+  color: rgba(180, 69, 108, 0.986);
+  z-index: 2; }
 
 /*fin header*/
 /*inicio carousel*/
@@ -186,14 +268,12 @@ footer {
   margin: 15px auto 25px auto;
   padding: 15px 25px 15px 25px;
   width: 95%;
-  border-radius: 5px;
-  border: 3.5px solid;
-  border-color: rgba(180, 69, 108, 0.986); }
+  border: 3.5px solid rgba(180, 69, 108, 0.986);
+  border-radius: 5px; }
 
 .color_carousel {
+  border: 3.5px solid rgba(180, 69, 108, 0.986);
   border-radius: 5px;
-  border: 3.5px solid;
-  border-color: rgba(180, 69, 108, 0.986);
   color: rgba(180, 69, 108, 0.986);
   background-color: rgba(229, 226, 173, 0.986); }
 
@@ -212,11 +292,10 @@ footer {
   margin-left: auto;
   height: min-content;
   width: 95%;
+  border: 3.5px solid rgba(180, 69, 108, 0.986);
   border-radius: 5px;
-  border: 3.5px solid;
-  border-color: rgba(180, 69, 108, 0.986);
-  grid-area: h1;
-  font-size: 3rem; }
+  font-size: 3rem;
+  z-index: 10; }
 
 .color-bg {
   color: rgba(180, 69, 108, 0.986);
@@ -232,51 +311,11 @@ footer {
   border-radius: 10px; }
 
 @media screen and (max-width: 800px) {
-  /*inicio index*/
-  .img_mascotas_h {
-    width: 200px;
-    height: 150px; }
-  .mascotas_nav {
-    width: 225px;
-    height: 275px; }
-  .img_mascotas_v {
-    width: 100px;
-    height: 150px; }
-  .ul_mascotas {
-    font-size: small;
-    font-weight: 700; }
-  /*fin index*/
   /*inicio footer*/
   .img-footer {
     width: 25px;
     height: 25px; }
   /*fin footer*/
-  /*inicio contacto*/
-  .contacto {
-    flex-direction: column; }
-  .img_rrss {
-    width: 32.5px;
-    height: 32.5px; }
-  /*fin contacto*/
-  /*inicio Quienes somos*/
-  .body__div__parrafo {
-    font-size: small;
-    margin-left: 12px;
-    margin-right: 12px;
-    padding: 12px 12px 12px 12px; }
-  .body__div__parrafo__img {
-    width: 300px;
-    height: 200px; }
-  /*fin quienes somos*/
-  /*inicio adopciones*/
-  .p_txt {
-    padding: auto;
-    margin: 7px auto 7px auto;
-    font-size: small; }
-  .titulos_adop {
-    font-size: large;
-    text-align: center; }
-  /*fin adopciones*/
   /*inicio carousel*/
   .img_carousel_v {
     width: 200px;
@@ -284,57 +323,21 @@ footer {
   .img_carousel_h {
     height: 200px;
     width: 400px; }
-  /*fin carousel*/ }
+  /*fin carousel*/
+  /*inicio header*/
+  .zoom_1-4:hover, .zoom_1-2:hover, .zoom_1-3:hover {
+    transform: scale(1.2);
+    width: 80%; }
+  /*fin header*/
+  .zoom_1-3:hover {
+    transform: scale(1.1); } }
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
-  /*inicio index*/
-  .img_mascotas_h {
-    width: 300px;
-    height: 225px; }
-  .mascotas_nav {
-    width: 225px;
-    height: 275px; }
-  .img_mascotas_v {
-    width: 200px;
-    height: 250px; }
-  .mascotas_nav {
-    width: 337px;
-    height: 412.5px; }
-  .ul_mascotas {
-    font-size: medium;
-    font-weight: 700; }
-  /*fin index*/
   /*inicio footer*/
   .img-footer {
     width: 37.5px;
     height: 37.5px; }
   /*fin footer*/
-  /*inicio contacto*/
-  .contacto {
-    flex-direction: column; }
-  .img_rrss {
-    width: 43.5px;
-    height: 43.5px; }
-  /*fin contacto*/
-  /*inicio Quienes somos*/
-  .body__div__parrafo {
-    font-size: medium;
-    margin-left: 16px;
-    margin-right: 16px;
-    padding: 16px 16px 16px 16px; }
-  .body__div__parrafo__img {
-    width: 400px;
-    height: 266px; }
-  /*fin quienes somos*/
-  /*inicio adopciones*/
-  .p_txt {
-    padding: auto;
-    margin: 7px auto 7px auto;
-    font-size: medium; }
-  .titulos_adop {
-    font-size: x-large;
-    text-align: center; }
-  /*fin adopciones*/
   /*inicio carousel*/
   .img_carousel_v {
     width: 330px;
@@ -342,6 +345,13 @@ footer {
   .img_carousel_h {
     height: 460px;
     width: 665px; }
-  /*fin carousel*/ }
+  /*fin carousel*/
+  /*inicio header*/
+  .zoom_1-4:hover, .zoom_1-2:hover, .zoom_1-3:hover {
+    width: min-content;
+    transform: scale(1.2); }
+  /*fin header*/
+  .zoom_1-3:hover {
+    transform: scale(1.2); } }
 
 /*fin media queries*/

@@ -1,0 +1,30 @@
+$ancho :95%;
+$borde: 3.5px solid  rgba(180, 69, 108, 0.986);
+$borde_r: 5px;
+$margen: 15px auto 25px auto;
+$padding: 15px 25px 15px 25px;
+
+
+
+$color:(
+    color1: rgba(180, 69, 108, 0.986),
+    color2:rgba(229, 226, 173, 0.986),
+    color3: rgba(180, 69, 108, 0.351)
+);
+
+
+@mixin bordes ($borde:3.5px solid  rgba(180, 69, 108, 0.986),$borde_r:5px) {
+    border: $borde;
+    border-radius: $borde_r;
+}
+
+@mixin textos ($ancho:95%,$borde:3.5px solid  rgba(180, 69, 108, 0.986) ,$borde_r:5px,$margen:15px auto 25px auto,$padding:15px 25px 15px 25px){
+    @include bordes($borde,$borde_r );
+    margin: $margen;
+    padding: $padding;
+    width: $ancho;
+    line-height: 1.5;
+    font-size:large;
+
+}
+

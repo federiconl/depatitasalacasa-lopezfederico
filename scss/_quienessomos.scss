@@ -1,0 +1,47 @@
+.body__div__parrafo{
+    position: relative;
+    float: left ;
+    text-align: justify;
+    color:map-get($color, color1 );
+    background-color: map-get($color, color2 );
+    height: min-content; 
+    @include textos;
+   
+
+    .body__div__parrafo__img {
+        float: right;
+        margin: 10px;
+        margin-left: 15px;
+        width: 800px ;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .body__div__parrafo{
+        font-size:small;
+        margin-left: 12px;
+        margin-right: 12px;
+        padding: 12px 12px 12px 12px;
+    }    
+        
+    .body__div__parrafo__img {
+        width: 300px;
+        height: 200px;
+
+    }
+}    
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+    .body__div__parrafo{
+        font-size:medium;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 16px 16px 16px 16px;
+    }    
+        
+    .body__div__parrafo__img {
+        width: 400px;
+        height: 266px;
+    
+    }
+}
