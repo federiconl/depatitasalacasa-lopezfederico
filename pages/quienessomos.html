@@ -45,8 +45,13 @@
 <!-- Fin menu de navegación -->
 
 <h1 class="h1_class">Quienes somos y que hacemos?</h1>
-<div class="body__div__parrafo ">        
-  <img class="body__div__parrafo__img" src="../img/perro-familia.jpg" alt="Perro sonriente con su familia">   
+<div class="body__div__parrafo ">     
+  <picture >
+    <source  media="(max-width:800px)" srcset="../img/perro-familia-400w.jpg" alt="Perro sonriente jugando">
+    <source  media="(max-width:1199px)" srcset="../img/perro-familia-500w.jpg" alt="Perro sonriente jugando">
+    <source  media="(min-width:1200px)" srcset="../img/perro-familia-900w.jpg" alt="Perro sonriente jugando">
+    <img class="img_nos" src="../img/perro-familia-900w.jpg" alt="Perro sonriente jugando"> 
+  </picture>   
   <p >Somos una organización protectora de animales especializada, desde 2018, en la ayuda a perros y gatos maltratados y/o abandonados; una organización argentina totalmente independiente que no recibe subvenciones de organismos oficiales, empresas ni partidos políticos.
           Las cuotas de nuestros socios y las donaciones de nuestros simpatizantes permiten que nuestra labor sea sostenible y preservan nuestra libertad de acción.
           Contamos con un centro veterinario en La Matanza abierto al público, que destina sus ingresos íntegramente al cuidado de los animales abandonados, y un centro de acogida en Villa Madero.

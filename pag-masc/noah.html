@@ -38,26 +38,39 @@
      <!-- Fin menu de navegación -->
      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-        <div class="carousel-item active d-flex align-items-center justify-content-center mt-5">
-            <img src="../img/10.jpg" class="d-block w-95 img_carousel_h" alt="...">
+            <div class="carousel-item active d-flex align-items-center justify-content-center mt-5">
+                <picture >
+                    <source  media="(max-width:800px)" srcset="../img/10-450w.jpg" alt="Noah">
+                    <source  media="(max-width:1199px)" srcset="../img/10-700w.jpg" alt="Noah">
+                    <source  media="(min-width:1200px)" srcset="../img/10-1100w.jpg" alt="Noah">
+                    <img class="d-block w-95 img_carousel_h align-items-center justify-content-center" src="../img/10-1100w.jpg" alt="Noah"> 
+                </picture>   
+            </div>
+            <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
+                <picture >
+                    <source  media="(max-width:800px)" srcset="../img/10-1-450w.jpg" alt="Noah">
+                    <source  media="(max-width:1199px)" srcset="../img/10-1-700w.jpg" alt="Noah">
+                    <source  media="(min-width:1200px)" srcset="../img/10-1-1100w.jpg" alt="Noah">
+                    <img class="d-block w-95 img_carousel_h align-items-center justify-content-center" src="../img/10-1-1100w.jpg" alt="Noah"> 
+                </picture>     
+            </div>
+            <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
+                <picture >
+                    <source  media="(max-width:800px)" srcset="../img/10-2-450w.jpg" alt="Noah">
+                    <source  media="(max-width:1199px)" srcset="../img/10-2-700w.jpg" alt="Noah">
+                    <source  media="(min-width:1200px)" srcset="../img/10-2-1100w.jpg" alt="Noah">
+                    <img class="d-block w-95 img_carousel_h align-items-center justify-content-center" src="../img/10-2-1100w.jpg" alt="Noah"> 
+                </picture>   
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-            <img src="../img/10-1.jpg" class="d-block w-95 img_carousel_h" alt="...">
-        </div>
-        <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-            <img src="../img/10-2.jpg" class="d-block w-95 img_carousel_h" alt="...">
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
     <section class="botones_carousel">
         <a href="duka.html"><button type="button" class="btn color_carousel ">Anterior</button></a>
         <a href="homero.html"><button type="button" class="btn color_carousel">Siguiente</button></a>

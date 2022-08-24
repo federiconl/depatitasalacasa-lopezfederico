@@ -37,24 +37,35 @@
     </header>
      <!-- Fin menu de navegación -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
         <div class="carousel-item active d-flex align-items-center justify-content-center mt-5">
-            <img src="../img/13.jpg" class="d-block w-95 img_carousel_h" alt="...">
+            <picture >
+                <source  media="(max-width:1199px)" srcset="../img/13-350w.jpg" alt="Juanita">
+                <source  media="(min-width:1200px)" srcset="../img/13-600w.jpg" alt="Juanita">
+                <img class="d-block w-95 img_carousel_v align-items-center justify-content-center" src="../img/13-600w.jpg" alt="Juanita"> 
+            </picture>   
         </div>
         <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-            <img src="../img/13-1.jpg" class="d-block w-95 img_carousel_h" alt="...">
+            <picture >
+                <source  media="(max-width:1199px)" srcset="../img/13-1-350w.jpg" alt="Juanita">
+                <source  media="(min-width:1200px)" srcset="../img/13-1-600w.jpg" alt="Juanita">
+                <img class="d-block w-95 img_carousel_v align-items-center justify-content-center" src="../img/13-1-600w.jpg" alt="Juanita"> 
+            </picture>   
         </div>
         <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-            <img src="../img/13.jpg" class="d-block w-95 img_carousel_h" alt="...">
-        </div>
+            <picture >
+                <source  media="(max-width:800px)" srcset="../img/13-2-450w.jpg" alt="Lala">
+                <source media="(max-width:1199px)" srcset="../img/13-2-700w.jpg" alt="Juanita">
+                <source media="(min-width:1200px)" srcset="../img/13-2-1100w.jpg" alt="Juanita">
+                <img class="d-block w-95 img_carousel_h align-items-center justify-content-center" src="../img/13-2-1100w.jpg" alt="Juanita"> 
+            </picture>   
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
 

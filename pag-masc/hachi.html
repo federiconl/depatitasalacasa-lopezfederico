@@ -38,30 +38,40 @@
     </header>
      <!-- Fin menu de navegación -->
      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner ">
-            <div class="carousel-item active d-flex align-items-center justify-content-center mt-5">
-                <img src="../img/3.jpg" class="d-block w-95 img_carousel_h" alt="Hachi">
-            </div>
-            <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-                <img src="../img/3-1.jpg" class="d-block w-95 img_carousel_v" alt="Hachi">
-            </div>
-            <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-                <img src="../img/3-2.jpg" class="d-block w-95 img_carousel_h" alt="Hachi">
-            </div>
+        <div class="carousel-item active d-flex align-items-center justify-content-center mt-5">
+            <picture >
+                <source  media="(max-width:1199px)" srcset="../img/3-350w.jpg" alt="Hachi">
+                <source  media="(min-width:1200px)" srcset="../img/3-600w.jpg" alt="Hachi">
+                <img class="d-block w-95 img_carousel_v align-items-center justify-content-center" src="../img/3-600w.jpg" alt="Hachi"> 
+            </picture>   
+        </div>
+        <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
+            <picture >
+                <source  media="(max-width:1199px)" srcset="../img/3-1-350w.jpg" alt="Hachi">
+                <source  media="(min-width:1200px)" srcset="../img/3-1-600w.jpg" alt="Hachi">
+                <img class="d-block w-95 img_carousel_v align-items-center justify-content-center" src="../img/3-1-600w.jpg" alt="Hachi"> 
+            </picture>   
+        </div>
+        <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
+            <picture >
+                <source media="(max-width:1199px)" srcset="../img/3-2-350w.jpg" alt="Hachi">
+                <source media="(min-width:1200px)" srcset="../img/3-2-600w.jpg" alt="Hachi">
+                <img class="d-block w-95 img_carousel_v align-items-center justify-content-center" src="../img/3-2-600w.jpg" alt="Hachi"> 
+            </picture>   
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
 
     <section class="botones_carousel">
         <a href="matilde.html"><button type="button" class="btn color_carousel ">Anterior</button></a>
-        <a href="huesos.html"><button type="button" class="btn color_carousel">Siguiente</button></a>
+        <a href="lala.html"><button type="button" class="btn color_carousel">Siguiente</button></a>
     </section>
     
    

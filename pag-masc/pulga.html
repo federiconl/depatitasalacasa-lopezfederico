@@ -37,17 +37,30 @@
     </header>
      <!-- Fin menu de navegación -->
      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active d-flex align-items-center justify-content-center mt-5">
-                <img src="../img/5.jpg" class="d-block w-95 img_carousel_h" alt="...">
-            </div>
-            <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-                <img src="../img/5-1.jpg" class="d-block w-95 img_carousel_h" alt="...">
-            </div>
-            <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
-                <img src="../img/5-2.jpg" class="d-block w-95 img_carousel_h" alt="...">
-            </div>
-        </div>
+        <div class="carousel-item active d-flex align-items-center justify-content-center mt-5">
+            <picture >
+                <source  media="(max-width:800px)" srcset="../img/5-450w.jpg" alt="Pulga">
+                <source  media="(max-width:1199px)" srcset="../img/5-700w.jpg" alt="Pulga">
+                <source  media="(min-width:1200px)" srcset="../img/5-1100w.jpg" alt="Pulga">
+                <img class="d-block w-95 img_carousel_h align-items-center justify-content-center" src="../img/5-1100w.jpg" alt="Pulga"> 
+            </picture>   
+          </div>
+          <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
+            <picture >
+                <source  media="(max-width:800px)" srcset="../img/5-1-450w.jpg" alt="Pulga">
+                <source  media="(max-width:1199px)" srcset="../img/5-1-700w.jpg" alt="Pulga">
+                <source  media="(min-width:1200px)" srcset="../img/5-1-1100w.jpg" alt="Pulga">
+                <img class="d-block w-95 img_carousel_h align-items-center justify-content-center" src="../img/5-1-1100w.jpg" alt="Pulga"> 
+            </picture>     
+          </div>
+          <div class="carousel-item  d-flex align-items-center justify-content-center mt-5">
+            <picture >
+                <source  media="(max-width:800px)" srcset="../img/5-2-450w.jpg" alt="Pulga">
+                <source  media="(max-width:1199px)" srcset="../img/5-2-700w.jpg" alt="Pulga">
+                <source  media="(min-width:1200px)" srcset="../img/5-2-1100w.jpg" alt="Pulga">
+                <img class="d-block w-95 img_carousel_h align-items-center justify-content-center" src="../img/5-2-1100w.jpg" alt="Pulga"> 
+            </picture>   
+        </div> 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -59,7 +72,7 @@
     </div>
 
     <section class="botones_carousel">
-        <a href="huesos.html"><button type="button" class="btn color_carousel ">Anterior</button></a>
+        <a href="lala.html"><button type="button" class="btn color_carousel ">Anterior</button></a>
         <a href="panchito.html"><button type="button" class="btn color_carousel">Siguiente</button></a>
     </section>
     
