@@ -87,8 +87,8 @@ footer{
 
 .zoom_1-3:hover{
     @extend.zoom_1-4:hover;
-    transform: scale(1.3);
-    background-color: map-get($color, color2 ) ;
+    transform: scale(1.01);
+    background-color: rgba(230, 226, 145, 0.867) ;
     color: map-get($color, color1 );
     z-index: 2;
 }

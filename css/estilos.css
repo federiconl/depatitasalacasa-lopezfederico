@@ -261,8 +261,8 @@ footer {
   transform: scale(1); }
 
 .zoom_1-3:hover {
-  transform: scale(1.3);
-  background-color: rgba(229, 226, 173, 0.986);
+  transform: scale(1.01);
+  background-color: rgba(230, 226, 145, 0.867);
   color: rgba(180, 69, 108, 0.986);
   z-index: 2; }
 
