@@ -46,37 +46,34 @@
       list-style-type: none; }
 
 @media screen and (max-width: 800px) {
-  .img_mascotas_h {
-    width: 200px;
-    height: 150px; }
-  .mascotas_nav {
+  .mascotas .mascotas_nav {
     width: 225px;
     height: 275px; }
-  .img_mascotas_v {
-    width: 100px;
-    height: 150px; }
-  .ul_mascotas {
-    font-size: small;
-    font-weight: 700; } }
+    .mascotas .mascotas_nav .img_mascotas_h {
+      width: 200px;
+      height: 150px; }
+    .mascotas .mascotas_nav .img_mascotas_v {
+      width: 100px;
+      height: 150px; }
+    .mascotas .mascotas_nav .ul_mascotas {
+      font-size: small;
+      font-weight: 700; } }
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
   /*inicio index*/
-  .img_mascotas_h {
-    width: 300px;
-    height: 225px; }
-  .mascotas_nav {
-    width: 225px;
-    height: 275px; }
-  .img_mascotas_v {
-    width: 200px;
-    height: 250px; }
-  .mascotas_nav {
+  .mascotas .mascotas_nav {
     width: 337px;
-    height: 412.5px; }
-  .ul_mascotas {
-    font-size: medium;
-    font-weight: 700; }
-  /*fin index*/ }
+    height: 412.5px;
+    /*fin index*/ }
+    .mascotas .mascotas_nav .img_mascotas_h {
+      width: 300px;
+      height: 225px; }
+    .mascotas .mascotas_nav .img_mascotas_v {
+      width: 200px;
+      height: 250px; }
+    .mascotas .mascotas_nav .ul_mascotas {
+      font-size: medium;
+      font-weight: 700; } }
 
 .p_txt {
   color: rgba(180, 69, 108, 0.986);
@@ -104,18 +101,18 @@
     padding: auto;
     margin: 7px auto 7px auto;
     font-size: small; }
-  .titulos_adop {
-    font-size: large;
-    text-align: center; } }
+    .p_txt .titulos_adop {
+      font-size: large;
+      text-align: center; } }
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
   .p_txt {
     padding: auto;
     margin: 7px auto 7px auto;
     font-size: medium; }
-  .titulos_adop {
-    font-size: x-large;
-    text-align: center; } }
+    .p_txt .titulos_adop {
+      font-size: x-large;
+      text-align: center; } }
 
 .body__div__parrafo {
   display: flexbox;
@@ -125,6 +122,7 @@
   color: rgba(180, 69, 108, 0.986);
   background-color: rgba(229, 226, 173, 0.986);
   height: min-content;
+  overflow: hidden;
   border: 3.5px solid rgba(180, 69, 108, 0.986);
   border-radius: 5px;
   margin: 15px auto 25px auto;
@@ -142,14 +140,21 @@
     font-size: small;
     margin-left: 12px;
     margin-right: 12px;
-    padding: 12px 12px 12px 12px; } }
+    padding: 12px 12px 12px 12px; }
+    .body__div__parrafo .img_nos {
+      width: 300px;
+      height: 200px;
+      margin-right: 15px; } }
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
   .body__div__parrafo {
     font-size: medium;
     margin-left: 16px;
     margin-right: 16px;
-    padding: 16px 16px 16px 16px; } }
+    padding: 16px 16px 16px 16px; }
+    .body__div__parrafo .img_nos {
+      width: 500px;
+      height: 333px; } }
 
 /*inicio contacto*/
 .contacto {
@@ -157,25 +162,39 @@
   margin: 15px auto 25px auto;
   width: 95%;
   border: 3.5px solid rgba(180, 69, 108, 0.986);
-  border-radius: 5px; }
+  border-radius: 5px;
+  overflow: hidden; }
   .contacto .img_rrss {
     width: 65px;
-    height: 65px; }
+    height: 65px;
+    display: inline-block; }
+  .contacto .letra_contacto {
+    font-size: xx-large; }
+  .contacto .letra_contacto-email {
+    font-size: xx-large; }
 
 /*fin contacto*/
 @media screen and (max-width: 800px) {
-  .contacto {
-    flex-direction: column; }
-  .img_rrss {
+  .contacto .img_rrss {
     width: 32.5px;
-    height: 32.5px; } }
+    height: 32.5px;
+    justify-content: flex-start; }
+  .contacto .letra_contacto {
+    font-size: large;
+    justify-content: flex-start; }
+  .contacto .letra_contacto-email {
+    font-size: medium;
+    justify-content: flex-start; } }
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
-  .contacto {
-    flex-direction: column; }
-  .img_rrss {
+  .contacto .img_rrss {
     width: 43.5px;
-    height: 43.5px; } }
+    height: 43.5px;
+    justify-content: flex-start; }
+  .contacto .letra_contacto {
+    font-size: x-large; }
+  .contacto .letra_contacto-email {
+    font-size: large; } }
 
 * {
   padding: 0;
@@ -325,7 +344,9 @@ footer {
     width: 80%; }
   /*fin header*/
   .zoom_1-3:hover {
-    transform: scale(1.1); } }
+    transform: scale(1.1); }
+  .h1_class {
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
   body {
@@ -349,6 +370,8 @@ footer {
     transform: scale(1.2); }
   /*fin header*/
   .zoom_1-3:hover {
-    transform: scale(1.2); } }
+    transform: scale(1.2); }
+  .h1_class {
+    font-size: 2rem; } }
 
 /*fin media queries*/

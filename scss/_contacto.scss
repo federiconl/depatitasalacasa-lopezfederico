@@ -4,32 +4,64 @@
     margin: $margen;
     width: $ancho;
     @include bordes;
+    overflow:hidden;
 
     .img_rrss {
         width: 65px;
         height: 65px;
+        display: inline-block;
         
     } 
+
+    .letra_contacto{
+        font-size: xx-large;
+
+    
+    }
+    
+    .letra_contacto-email{
+        font-size: xx-large;
+    }
 }
 /*fin contacto*/
 
 @media screen and (max-width: 800px) {
     .contacto{
-        flex-direction: column;
+        
+       
+    
+        .img_rrss {
+            width: 32.5px;
+            height: 32.5px;
+            justify-content: flex-start;
+        }
+        .letra_contacto{
+            font-size: large;
+            justify-content: flex-start;
+        }
+        .letra_contacto-email{
+            font-size: medium;
+            justify-content: flex-start;
+        }
     }
-
-    .img_rrss {
-    width: 32.5px;
-    height: 32.5px;}
 }
 
 
 @media screen and (min-width: 801px) and (max-width: 1199px) {
     .contacto{
-        flex-direction: column;
+        
+        .img_rrss {
+            width: 43.5px;
+            height: 43.5px;
+            justify-content: flex-start;
+        }
+
+        .letra_contacto{
+            font-size: x-large;
+        }
+        .letra_contacto-email{
+            font-size: large;
+        }
     }
 
-    .img_rrss {
-    width: 43.5px;
-    height: 43.5px;}
 }
